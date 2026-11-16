@@ -12,7 +12,7 @@ router.get('/', (_, response) => {
     response.send(list)
 })
 
-router.post('/recipe//add', (request, response) => {
+router.post('/recipe/add', (request, response) => {
     const recipe = {
         ...request.body,
         id: recipes.length + 1
